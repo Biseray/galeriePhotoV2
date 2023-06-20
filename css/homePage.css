@@ -1,0 +1,421 @@
+.imgSize {
+    height: 500px;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+h2 {
+    color: white;
+}
+
+header {
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+
+
+main {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
+
+.TextWelcome {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+
+
+
+}
+
+.TextWelcome h1 {
+    width: 100%;
+    position: relative;
+    opacity: 0;
+    transform: scaleY(0.9);
+
+    font-size: 30Vh;
+
+}
+
+.TextWelcome h1 .block {
+
+    background-color: #000000;
+    height: 200%;
+    margin-top: -10%;
+    margin-left: -10%;
+    width: 110%;
+    z-index: 333;
+    transform: rotate(15deg);
+    right: 0;
+    transition: 2.2s all;
+}
+
+.TextWelcome.active h1 {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    transform: scaleY(1);
+    transition: 3s all;
+
+}
+
+.TextWelcome.active h1 .block {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    margin-top: -6%;
+    margin-left: -10%;
+    height: 200%;
+
+
+    width: -0%;
+
+    z-index: 333;
+    top: 0;
+
+
+}
+
+
+
+
+.posTitle {
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+
+
+.imgPosition .active {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+
+
+.containerImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.TextWelcome.active .posTitle {
+    padding-top: 8em;
+    padding-bottom: 2em;
+}
+
+.collectionCard {
+    overflow: hidden;
+    position: relative;
+
+
+
+}
+
+
+
+.collectionCard.active .blockImg {
+    width: -0px;
+    height: 200%;
+    transform: rotate(15deg);
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    z-index: 44;
+    top: 0;
+    transition: 2.2s all;
+
+
+}
+
+
+.blockImg {
+    width: 200%;
+    height: 200%;
+    margin-top: -20%;
+    margin-left: -20%;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    transform: rotate(15deg);
+    z-index: 44;
+    top: 0;
+}
+
+
+.lineMenu {
+    display: none;
+}
+
+
+
+
+
+h1 {
+    color: aliceblue;
+    padding: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+
+
+
+li {
+    display: inline-block;
+    margin: 1em;
+}
+
+ul {
+    margin: 0em;
+    padding: 0em;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    font-size: 1.5em;
+}
+
+.Presentation {
+    text-align: center;
+}
+
+/* footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+} */
+
+/* .containerPage{
+    
+        min-height: 200vh;
+
+ 
+      
+} */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+    header nav {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .lineMenu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 1;
+        right: 0;
+        margin-right: 2em;
+
+
+    }
+
+    .lineone {
+        z-index: 333;
+        position: absolute;
+        background-color: aliceblue;
+        width: 20px;
+        top: 0px;
+        height: 2px;
+        transform: rotate(0deg);
+    }
+
+    .linethird {
+        position: absolute;
+        background-color: aliceblue;
+        width: 20px;
+        top: -4px;
+        height: 2px;
+        transform: rotate(0deg);
+    }
+
+    .linetwo {
+        position: absolute;
+        background-color: aliceblue;
+        width: 20px;
+        top: 4px;
+        height: 2px;
+        transform: rotate(0deg);
+
+    }
+
+
+    .TextWelcome h1 {
+
+
+        font-size: 8Vh;
+
+    }
+
+
+    .TextWelcome {
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+
+
+
+
+    }
+
+    .TextWelcome {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+
+
+
+
+
+    }
+
+    .TextWelcome.active .posTitle {
+        padding-top: 0vh;
+
+    }
+
+    .imgSize {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .blockImg {
+        width: 200%;
+        height: 200%;
+        margin-top: -20%;
+        margin-left: -50%;
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        transform: rotate(15deg);
+        z-index: 44;
+        top: 0;
+    }
+
+    #buttonNav {
+        background-color: rgba(3, 3, 3, 0);
+        border: none;
+        z-index: 1;
+
+
+
+
+    }
+
+    #menu {
+        overflow: hidden;
+    }
+
+    .menu-hidden {
+        display: none;
+
+    }
+
+    .menu-visible {
+        background-color: aliceblue;
+        width: 100%;
+        padding-right: 2%;
+        padding-left: 2%;
+
+        position: absolute;
+        display: block;
+        margin-top: 5em;
+
+        animation: fade-in 0.5s forwards;
+
+    }
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            height: 0%;
+        }
+
+        to {
+            opacity: 1;
+            height: 100%;
+        }
+    }
+
+    header {
+        position: relative;
+    }
+
+    main {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+
+
+    }
+
+    .menu-visible ul li a {
+        color: #000000;
+    }
+
+    .button-active .linethird {
+        top: 0px;
+        transform: rotate(-45deg);
+        transition: all 1s ease,
+    }
+
+    .button-active .linetwo {
+        opacity: 0;
+
+    }
+
+    .button-active .lineone {
+        top: 0px;
+        transform: rotate(45deg);
+        transition: all 1s ease,
+    }
+}
