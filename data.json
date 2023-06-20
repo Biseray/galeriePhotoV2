@@ -4,7 +4,7 @@
         "title": "collection 1 ",
         "cover": "./asset/DSCF3494.jpg",
         "pictures": [
-            "../asset/DSCF3494.jpg","../asset/DSCF3502.jpg", "../asset/DSCF3502.jpg",  "../asset/DSCF3494.jpg","../asset/DSCF3494.jpg","../asset/DSCF3494.jpg","../asset/DSCF3494.jpg"
+            "./asset/DSCF3494.jpg","./asset/DSCF3502.jpg", "../asset/DSCF3502.jpg",  "../asset/DSCF3494.jpg","../asset/DSCF3494.jpg","../asset/DSCF3494.jpg","../asset/DSCF3494.jpg"
         ],
       
         "description": "description"
@@ -14,7 +14,7 @@
         "title": "collection 2 ",
         "cover": "./asset/DSCF3502.jpg",
         "pictures": [
-            "../asset/DSCF3502.jpg", "./asset/DSCF3502.jpg", "./asset/DSCF3502.jpg", "./asset/DSCF3502.jpg", "./asset/DSCF3502.jpg"
+            "./asset/DSCF3502.jpg", "./asset/DSCF3502.jpg", "./asset/DSCF3502.jpg", "./asset/DSCF3502.jpg", "./asset/DSCF3502.jpg"
         ],
         "description": "description"
     }
