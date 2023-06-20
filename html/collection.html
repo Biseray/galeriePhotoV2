@@ -8,6 +8,7 @@
 
     <script src="../js/collection.js" defer></script>
     <link rel="stylesheet" href="../css/collection.css">
+    <script src="../js/script.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -17,21 +18,31 @@
 
         <h2>Allan Biseray </h2>
     </div>
-    <nav>
+
+    <div class="lineMenu">
+        <button id="buttonNav" onclick="toggleMenu()">
+            <div class="lineone"></div>
+            <div class="linetwo"></div>
+            <div class="linethird"></div>
+        </button>
+    </div>
+
+
+
+
+    <nav id="menu" class="menu-hidden">
         <ul>
             <li>
-                <a href="../index.html">menu </a>
+                <a href="../index.html">home </a>
             </li>
-            <li>
-                <a href="">a propos de moi </a>
-            </li>
+          
 
         </ul>
     </nav>
 
 </header>
     <main>
-        <h1> title </h1>
+       <h1 class="titleCollection">  </h1> 
         <div id="collectionImg"> </div>
     </main>
 <footer>

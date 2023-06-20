@@ -20,6 +20,9 @@ const collection = async () => {
 
     img.innerHTML = imgPictures;
 
+    const titleCollection = document.querySelector('.titleCollection');
+    titleCollection.innerHTML = `${dataItem.title}`;
+
 
 
 

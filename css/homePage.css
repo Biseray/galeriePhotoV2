@@ -124,7 +124,7 @@ main {
 .collectionCard {
     overflow: hidden;
     position: relative;
-
+  
 
 
 }
@@ -140,6 +140,7 @@ main {
     z-index: 44;
     top: 0;
     transition: 2.2s all;
+  
 
 
 }
@@ -306,12 +307,7 @@ footer {
         height: 80vh;
         display: flex;
         align-items: center;
-        overflow: hidden;
-
-
-
-
-
+        overflow: hidden
     }
 
     .TextWelcome.active .posTitle {
@@ -326,6 +322,7 @@ footer {
 
 
     .blockImg {
+        
         width: 200%;
         height: 200%;
         margin-top: -20%;
@@ -337,14 +334,11 @@ footer {
         top: 0;
     }
 
+
     #buttonNav {
         background-color: rgba(3, 3, 3, 0);
         border: none;
         z-index: 1;
-
-
-
-
     }
 
     #menu {
@@ -363,7 +357,8 @@ footer {
         padding-left: 2%;
 
         position: absolute;
-        display: block;
+        display:flex;
+        justify-content: center;
         margin-top: 5em;
 
         animation: fade-in 0.5s forwards;
@@ -394,9 +389,8 @@ footer {
         flex-direction: column;
         align-items: center;
 
-
-
     }
+
 
     .menu-visible ul li a {
         color: #000000;
@@ -417,5 +411,13 @@ footer {
         top: 0px;
         transform: rotate(45deg);
         transition: all 1s ease,
+    }
+
+    .collectionCard {
+        overflow: hidden;
+        position: relative;
+        margin-top: 0em;
+        margin-bottom: 4em;
+    
     }
 }

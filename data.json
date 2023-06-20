@@ -8,14 +8,6 @@
         ],
       
         "description": "description"
-    },
-    {
-        "id": "c67ab8a8",
-        "title": "collection 2 ",
-        "cover": "./asset/DSCF3502.jpg",
-        "pictures": [
-            "../asset/DSCF3502.jpg", "./asset/DSCF3502.jpg", "./asset/DSCF3502.jpg", "./asset/DSCF3502.jpg", "./asset/DSCF3502.jpg"
-        ],
-        "description": "description"
     }
+
 ]

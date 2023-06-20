@@ -60,7 +60,7 @@ nav {
 
 
 
-.imgPosition{
+.imgPosition {
     padding: 1em;
 }
 
@@ -70,12 +70,171 @@ footer {
 
 }
 
-#collectionImg{
+.lineMenu {
+    display: none;
+}
+
+#collectionImg {
     max-width: 1200px;
     justify-content: center;
     display: flex;
-  flex-wrap: wrap;
-    align-items: center; 
-    gap:4em;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4em;
 
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    header nav {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .lineMenu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 1;
+        right: 0;
+        margin-right: 2em;
+
+
+    }
+
+    .lineone {
+        z-index: 333;
+        position: absolute;
+        background-color: aliceblue;
+        width: 20px;
+        top: 0px;
+        height: 2px;
+        transform: rotate(0deg);
+    }
+
+    .linethird {
+        position: absolute;
+        background-color: aliceblue;
+        width: 20px;
+        top: -4px;
+        height: 2px;
+        transform: rotate(0deg);
+    }
+
+    .linetwo {
+        position: absolute;
+        background-color: aliceblue;
+        width: 20px;
+        top: 4px;
+        height: 2px;
+        transform: rotate(0deg);
+
+    }
+
+
+
+
+
+    .imgSize {
+        width: 100%;
+        height: auto;
+    }
+
+
+    #buttonNav {
+        background-color: rgba(3, 3, 3, 0);
+        border: none;
+        z-index: 1;
+    }
+
+    #menu {
+        overflow: hidden;
+    }
+
+    .menu-hidden {
+        display: none;
+
+    }
+
+    .menu-visible {
+        background-color: aliceblue;
+        width: 100%;
+        padding-right: 2%;
+        padding-left: 2%;
+        z-index: 233;
+        position: absolute;
+        display: block;
+        margin-top: 5em;
+
+        animation: fade-in 0.5s forwards;
+
+    }
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            height: 0%;
+        }
+
+        to {
+            opacity: 1;
+            height: 100%;
+        }
+    }
+
+    header {
+        position: relative;
+    }
+
+    main {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    .menu-visible ul li a {
+        color: #000000;
+    }
+
+    .button-active .linethird {
+        top: 0px;
+        transform: rotate(-45deg);
+        transition: all 1s ease,
+    }
+
+    .button-active .linetwo {
+        opacity: 0;
+
+    }
+
+    .button-active .lineone {
+        top: 0px;
+        transform: rotate(45deg);
+        transition: all 1s ease,
+    }
+
+    .imgPosition {
+        padding: 0.5em 0em 0.5em 0em;
+    }
+
+    #collectionImg {
+        margin-top: 3em;
+        gap: 0em;
+
+    }
+
+    h1 {
+        color: white;
+    }
 }
