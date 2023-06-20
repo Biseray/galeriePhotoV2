@@ -3,7 +3,7 @@ const collection = async () => {
     const img = document.getElementById('collectionImg');
     const dataId = new URL(location.href).searchParams.get("id");
 
-    const response = await fetch('./data.json');
+    const response = await fetch('../data.json');
     const data = await response.json();
 
     const dataItem = data.find(item => item.id === dataId);

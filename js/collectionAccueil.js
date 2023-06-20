@@ -8,7 +8,7 @@ const affichageCollection = async () => {
         let cards = '';
         data.forEach(items => {
             cards += `
-            <a href='./html/collection.html?id=${items.id}'>
+            <a href='../html/collection.html?id=${items.id}'>
                 <div class="collectionCard">
                         <img class="imgSize ImgCover" src="${items.cover}" alt="img2">
                         <h2>${items.title}</h2>  <div class="blockImg"></div>
