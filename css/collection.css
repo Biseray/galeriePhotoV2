@@ -238,4 +238,101 @@ footer {
     h1 {
         color: white;
     }
+
+    .loader {
+        width: 100%;
+        height: 100%;
+        gap: 1em;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: -1em;
+        padding: 1em;
+        position: fixed;
+        animation: loader 2s ease;
+
+    }
+
+    @keyframes loader {
+        0% {
+            background-color: rgb(27, 27, 27);
+            z-index: 333;
+        }
+
+        90% {
+            background-color: rgb(27, 27, 27);
+            z-index: 333;
+        }
+
+        100% {
+            background-color: rgba(255, 255, 255, 0);
+            z-index: -232;
+        }
+
+    }
+
+    .line1 {
+        width: 20px;
+        height: 20px;
+
+        z-index: -333;
+        animation: pointLoader 1.9s linear;
+        animation-delay: 0s;
+
+    }
+
+    .line2 {
+
+        width: 20px;
+        height: 20px;
+
+        z-index: -333;
+        animation: pointLoader 1.7s linear;
+        animation-delay: 0.2s;
+
+    }
+
+    .line3 {
+
+        width: 20px;
+        height: 20px;
+
+        z-index: -333;
+        animation: pointLoader 1.6s linear;
+        animation-delay: 0.3s;
+    }
+
+    @keyframes pointLoader {
+
+
+
+        0% {
+            background-color: rgb(255, 255, 255);
+            z-index: 333;
+            margin-top: -4em;
+
+
+        }
+
+        30% {
+            margin-top: 0em;
+
+        }
+
+
+                  80% {
+                      margin-top: -4em;
+        
+                  }
+
+
+
+        100% {
+            background-color: rgb(255, 255, 255);
+            z-index: -333;
+
+        }
+    }
+
 }
