@@ -169,7 +169,8 @@ footer {
         padding-left: 2%;
         z-index: 233;
         position: absolute;
-        display: block;
+        display: FLEX;
+        justify-content: center;
         margin-top: 5em;
 
         animation: fade-in 0.5s forwards;

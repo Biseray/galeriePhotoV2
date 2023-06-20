@@ -45,4 +45,14 @@ const collection = async () => {
   }
 }
 
+
+
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("menu-visible");
+
+  const buttonNav = document.getElementById("buttonNav");
+  buttonNav.classList.toggle("button-active");
+}
+
 collection();
